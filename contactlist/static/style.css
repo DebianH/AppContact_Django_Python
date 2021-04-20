@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+body {
+	font-family: 'Yatra One', cursive;
+	margin: 0;
+	color: #fff;	
+}
+.container {
+	max-width: 428px;
+	margin: 0 auto;
+	background-color:#012e67;
+	min-height: 100vh;	
+}
+.header {
+	display: flex;
+	justify-content: space-evenly;
+	background: #ff00cc;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 2em 0;
+	align-items: center;
+}
+.contact-search{
+	font-size: 1.2em;
+	padding: .3em;
+	border-radius: 100px;
+	border: 1px solid #fff;
+	outline: none;
+}
+i {
+	font-size: 1.5em;
+}
+.contact-name{
+	font-size: 1.2em;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+hr{
+	border: 1px solid #efc0ea;
+}
+.list__item{
+	list-style: none;
+}
+.relationship{
+	width: 6em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	background: #6a3093;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-size: .8em;
+}
+.contact-section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.5em;
+	transition: 0.3s;
+}
+.contact-section:hover{
+	background-color: #024f94;
+}
+.text{
+	padding-left: 1em;
+}
+/* m25 */
+

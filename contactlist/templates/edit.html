@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="{% static 'ed.css' %}">
+	<title>Contact Page</title>
+</head>
+<body>
+	<div class="container">
+		<header class="hero">
+			<a href="{% url 'profile' contact.id %}">
+				<i class='bx bx-arrow-back back-btn'></i>
+		    </a>
+		    <div class="hero-info">
+		    	<h1 class="name">{{ contact.full_name | title }}</h1>
+		    	<p class="relationship">{{ contact.relationship | title}}</p>
+		    </div>
+		</header>
+		<form action="" method="POST">
+			{% csrf_token %}
+		
+		<section class="contact-info">
+			<div class="info-line">
+				<i class='bx bxs-user-account icon-gradient'></i>
+				<input type="text" class="type" name="fullname" value="{{ contact.full_name }}">
+			</div>
+			<div class="info-line">
+				<i class='bx bxs-message-alt-detail icon-gradient'></i>
+				<input type="text" class="type" name="relationship" value="{{ contact.relationship }}">
+			</div>
+			<div class="info-line">
+				<i class='bx bx-message-rounded-edit icon-gradient'></i>
+				<input type="text" class="type" name="phone" value="{{ contact.phone_number }}">
+			</div>
+			<div class="info-line">
+				<i class='bx bx-mail-send icon-gradient'></i>
+				<input type="text" class="type" name="email" value="{{ contact.email }}">
+			</div>
+			<div class="info-line">
+				<i id="location" class='bx bx-been-here icon-gradient'></i>
+				<input type="text" class="type" name="address" value="{{ contact.address }}">
+			</div>
+			
+		</section>
+		<section class="button-container">
+			<a href="">
+				<div class="update-contact">
+					<i class='bx bxs-user-check icon-gradient'></i>
+					<button class="button">Save Contact</button>
+				</div>
+			</a>
+		</section>
+	</form>
+		<section class="button-container">
+			<a href="{% url 'delete' contact.id %}">
+				<div class="update-contact">
+					<i class='bx bxs-trash icon-gradient'></i>
+					<button class="button">Delete Contact</button>
+				</div>
+			</a>
+		</section>
+</div>
+</body>
+</html>

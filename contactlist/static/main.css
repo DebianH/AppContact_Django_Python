@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Yatra One', cursive;
+	margin: 0;
+	color: #fff;	
+}
+.container {
+	max-width: 428px;
+	margin: 0 auto;
+	background-color:#012e67;
+	min-height: 100vh;	
+}
+.hero {	
+	background: #ff00cc;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 1em 0;	
+	align-items: center;
+}
+.back-btn{
+	font-size: 1.7em;
+	padding-left: 1em;
+}
+.hero-info{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+i {
+	font-size: 1.5em;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.relationship{
+	width: 6em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	background: #6a3093;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-size: .8em;
+}
+.contact-info{
+	padding: 1em 1.5em;
+}
+.info-line{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	
+	margin-top: 2em;
+	border-radius: 20px;
+	box-shadow: 6px 6px 12px #6a3093,
+}
+p {
+	margin: 0;
+	padding-left: 2em;
+}
+.icon-gradient {
+	background: #ff00cc;  
+	background: -webkit-linear-gradient(to right, #333399, #ff00cc);  
+	background: linear-gradient(to right, #333399, #ff00cc);
+	border-radius: 100px;
+	padding: .5em;
+}
+#location{
+	padding: .5em .6em;
+}
+.edit-contact{
+	text-align: center;
+}
